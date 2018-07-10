@@ -28,6 +28,8 @@ connection = MongoClient('mongodb://localhost:27017/Culminate')
 db = connection.Culminate
 
 
+logging.debug('Blah')
+
 class Spider(XMLFeedSpider):
     """
         Active main spider which crawls through the links provided
